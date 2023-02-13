@@ -1,0 +1,35 @@
+@use "./utils/reset";
+@use "./utils/colors" as *;
+@use "./utils/mixins" as *;
+
+@use "./blocks/heroSection.scss";
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  color: $color__text-main;
+}
+
+body {
+  background-color: $color__background--main;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 20px;
+
+  @include onTablet {
+    padding: 0 40px;
+  }
+
+  @include onDesktop {
+    padding: 0;
+  }
+}
+
+.page {
+  &--loading {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+}

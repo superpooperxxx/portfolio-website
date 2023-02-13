@@ -18,5 +18,9 @@
   "homepage": "https://github.com/superpooperxxx/portfolio-website#readme",
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "sass": "^1.58.0"
   }
 }

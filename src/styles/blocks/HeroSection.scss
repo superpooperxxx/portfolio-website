@@ -1,0 +1,190 @@
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
+.hero {
+  // position: fixed;
+  position: relative;
+  z-index: 1;
+  top: 0;
+
+  height: 100vh;
+  width: 100%;
+
+  background-color: $color__background--main;
+
+  &__text-reveal {
+    position: relative;
+    top: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 1s;
+  }
+
+  &__blob {
+
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
+    top: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-50%);
+    opacity: 0.1;
+
+    overflow: hidden;
+  }
+
+  &__blob-img {
+    width: 350px;
+    max-height: 90%;
+
+    @include onTablet {
+      width: 700px;
+    }
+
+    @include onDesktop {
+      width: 50%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: inherit;
+  }
+
+  &__hi {
+    display: inline-block;
+    width: 70px;
+
+    @include onTablet {
+      width: 90px;
+    }
+
+    @include onDesktop {
+      width: 112px;
+    }
+  }
+
+  &__hi-svg {
+    stroke-dasharray: 629;
+    stroke-dashoffset: 0;
+  }
+
+  &__greeting {
+    margin-bottom: 25px;
+
+    font-size: 35px;
+    font-weight: 100;
+
+    @include onTablet {
+      margin-bottom: 30px;
+      font-size: 50px;
+    }
+
+    @include onDesktop {
+      font-size: 75px;
+    }
+  }
+
+  &__fullname {
+    font-weight: 500;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 100;
+
+    @include onTablet {
+      margin-bottom: 35px;
+      font-size: 28px;
+      line-height: 45px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+
+  &__job {
+    font-weight: 500;
+    color: $color__text-accent--purple;
+  }
+
+  &__city {
+    position: relative;
+    font-weight: 500;
+
+    &::after {
+      content: "🇺🇦";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      font-size: 20px;
+      transform: translate(75%, -40%);
+
+      @include onTablet {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &__summary {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+
+    @include onTablet {
+      margin-bottom: 45px;
+      font-size: 20px;
+      line-height: 38px;
+    }
+  }
+
+  &__download-cv {
+    position: relative;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 50px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: $color__borders;
+
+    border: 2px solid $color__borders;
+    border-radius: 50px;
+    opacity: 0;
+
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $color__borders;
+      color: #fff;
+    }
+
+    @include onTablet {
+      width: 220px;
+      height: 65px;
+      font-size: 20px;
+    }
+  }
+}
