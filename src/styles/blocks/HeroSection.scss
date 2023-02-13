@@ -132,7 +132,7 @@
       right: 0;
 
       font-size: 20px;
-      transform: translate(75%, -40%);
+      transform: translate(18px, -40%);
 
       @include onTablet {
         font-size: 25px;
@@ -158,7 +158,7 @@
   &__download-cv {
     position: relative;
     z-index: 1;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;

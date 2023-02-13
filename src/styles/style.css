@@ -136,7 +136,7 @@ button {
   top: 0;
   right: 0;
   font-size: 20px;
-  transform: translate(75%, -40%);
+  transform: translate(18px, -40%);
 }
 @media (min-width: 768px) {
   .hero__city::after {
