@@ -15,7 +15,7 @@
   &__text-reveal {
     position: relative;
     top: 50px;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: all 1s;
   }
 
@@ -127,12 +127,10 @@
 
     &::after {
       content: "🇺🇦";
-      position: absolute;
-      top: 0;
-      right: -20px;
+      display: inline-block;
 
       font-size: 20px;
-      transform: translateY(-40%);
+      transform: translateY(-15px);
 
       @include onTablet {
         font-size: 25px;
