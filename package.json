@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Kyrylo's Haiduk person porfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superpooperxxx/portfolio-website.git"
+  },
+  "author": "Kyrylo Haiduk <haidukwork@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superpooperxxx/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/superpooperxxx/portfolio-website#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
