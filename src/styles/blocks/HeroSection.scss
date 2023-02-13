@@ -129,10 +129,10 @@
       content: "🇺🇦";
       position: absolute;
       top: 0;
-      right: 0;
+      right: -20px;
 
       font-size: 20px;
-      transform: translate(18px, -40%);
+      transform: translateY(-40%);
 
       @include onTablet {
         font-size: 25px;
