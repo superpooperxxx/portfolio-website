@@ -3,6 +3,7 @@
 @use "./utils/mixins" as *;
 
 @use "./blocks/heroSection.scss";
+@use "./blocks/PortfolioHeader.scss";
 
 :root {
   font-family: 'Roboto', sans-serif;

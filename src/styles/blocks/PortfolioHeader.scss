@@ -1,0 +1,29 @@
+@use "../utils/mixins" as *;
+
+.portfolio-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: #fff;
+
+  &__title {
+    position: relative;
+    z-index: 2;
+
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+
+    @include onTablet {
+      font-size: 75px;
+    }
+
+    @include onDesktop {
+      font-size: 150px;
+    }
+  }
+}

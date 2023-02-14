@@ -12,12 +12,12 @@
 
   background-color: $color__background--main;
 
-  &__text-reveal {
-    position: relative;
-    top: 50px;
-    // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: all 1s;
-  }
+  // &__text-reveal {
+  //   position: relative;
+  //   top: 50px;
+  //   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  //   transition: all 1s;
+  // }
 
   &__blob {
 
@@ -122,20 +122,7 @@
   }
 
   &__city {
-    position: relative;
     font-weight: 500;
-
-    &::after {
-      content: "🇺🇦";
-      display: inline-block;
-
-      font-size: 20px;
-      transform: translateY(-15px);
-
-      @include onTablet {
-        font-size: 25px;
-      }
-    }
   }
 
   &__summary {
@@ -170,7 +157,7 @@
 
     border: 2px solid $color__borders;
     border-radius: 50px;
-    opacity: 0;
+    // opacity: 0;
 
     transition: all 0.5s;
 

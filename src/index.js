@@ -1,22 +1,23 @@
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+
 gsap.registerPlugin(ScrollTrigger);
 
-const intro = gsap.timeline();
-
-  intro.from(
-    '.hero__hi-svg',
-    {
-      duration: 2,
-      strokeDashoffset: 629,
-      delay: 0.1,
-      ease: "expo.in"
-    }
-  )
+gsap.timeline().from(
+  '.hero__hi-svg',
+  {
+    duration: 2,
+    strokeDashoffset: 629,
+    delay: 0.1,
+    ease: 'expo.in'
+  }
+)
   .to(
     '#svgGroup',
     {
       duration: 0.5,
       delay: 0.1,
-      fill: "#D6D5A8",
+      fill: '#D6D5A8',
     }
   )
   .from(
@@ -27,7 +28,7 @@ const intro = gsap.timeline();
       scale: 2,
       transform: 'translateX(-50%)',
       position: 'relative',
-      ease: "power3.inOut",
+      ease: 'power3.inOut',
     }
   )
   .from(
@@ -41,7 +42,7 @@ const intro = gsap.timeline();
     '.hero__text-reveal',
     {
       duration: 0.5,
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
       top: 0,
       stagger: 0.5,
       ease: 'power3.out'
@@ -55,4 +56,4 @@ const intro = gsap.timeline();
       opacity: 1,
       onComplete: () => document.querySelector('.page').classList.remove('page--loading')
     }
-  )
+  );

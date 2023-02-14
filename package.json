@@ -4,7 +4,8 @@
   "description": "Kyrylo's Haiduk person porfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./src/styles/style.scss ./src/styles/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/superpooperxxx/portfolio-website/issues"
   },
-  "homepage": "https://github.com/superpooperxxx/portfolio-website#readme",
+  "homepage": "https://github.com/superpooperxxx/portfolio-website",
   "devDependencies": {
+    "@mate-academy/eslint-config": "0.0.20",
     "gh-pages": "^5.0.0"
   },
   "dependencies": {
