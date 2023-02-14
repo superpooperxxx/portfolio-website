@@ -1,0 +1,12 @@
+.page {
+  &--loading {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+
+  &__hero {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+}

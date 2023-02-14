@@ -1,0 +1,15 @@
+@use "../utils/mixins" as * ;
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 24px;
+
+  @include onTablet {
+    padding: 0 40px;
+  }
+
+  @include onDesktop {
+    padding: 0;
+  }
+}

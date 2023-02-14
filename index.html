@@ -19,7 +19,7 @@
   <title>Kyrylo Haiduk</title>
 </head>
 <body class="page"> <!-- page--loading -->
-  <header class="hero">
+  <header class="hero page__hero">
     <div class="hero__blob" aria-hidden>
       <img
         src="./src/static/blobanimation.svg"
@@ -81,9 +81,57 @@
   <section class="portfolio-header">
     <h2 class="portfolio-header__title">Portfolio</h2>
   </section>
+  <section class="portfolio">
+    <article class="project">
+      <div class="container">
+        <div class="project__header">
+          <h3 class="project__title">
+            <span class="project__number">#01</span>
+            Planet facts
+          </h3>
+          <ul class="project__tags">
+            <li class="project__tag">React</li>
+            <li class="project__tag">Sass</li>
+            <li class="project__tag">BEM</li>
+            <li class="project__tag">GSAP</li>
+            <li class="project__tag">Particles.js</li>
+          </ul>
+        </div>
+        <div class="project__links">
+          <a
+            href="https://superpooperxxx.github.io/planets-facts/"
+            target="_blank"
+            class="project__link project__link--demo"
+          >
+            <img
+              aria-hidden
+              src="./src/static/icon__demo.png"
+              alt="live demo icon"
+              class="project__link-icon project__link-icon--demo"
+            >
+            <span class="project__link-text">Live Demo</span>
+          </a>
+          <a
+            href="https://github.com/superpooperxxx/planets-facts"
+            target="_blank"
+            class="project__link project__link--code"
+          >
+            <img
+              aria-hidden
+              src="./src/static/icon__code.png"
+              alt="code icon"
+              class="project__link-icon project__link-icon--code"
+            >
+            <span class="project__link-text">Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <div style="height: 100vh"></div>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  <!-- <script src="./src/index.js"></script> -->
+  <script src="./src/index.js"></script>
 </body>
 </html>

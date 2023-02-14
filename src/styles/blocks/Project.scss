@@ -1,0 +1,185 @@
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
+.project {
+  min-height: 100vh;
+  padding-top: 25px;
+
+  color: #000;
+  background-color: $color__project-background;
+
+  @include onTablet {
+    padding-top: 35px;
+  }
+
+  @include onDesktop {
+    padding-top: 40px;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #000;
+
+    @include onTablet {
+      margin-bottom: 18px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include onTablet {
+      font-size: 60px;
+    }
+
+    @include onDesktop {
+      font-size: 100px;
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin-bottom: 15px;
+
+    @include onTablet {
+      gap: 7px;
+      margin-bottom: 20px;
+    }
+
+    @include onDesktop {
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__tag {
+    padding: 2px 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+    background: #fff;
+
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    @include onTablet {
+      padding: 4px 12px;
+
+      font-size: 16px;
+    }
+
+    @include onDesktop {
+      padding: 4px 15px;
+
+      font-size: 20px;
+    }
+  }
+
+  &__links {  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding-right: 5px;
+
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+
+    @include onTablet {
+      gap: 7px;
+      padding-right: 6px;
+      font-size: 16px;
+    }
+
+    @include onDesktop {
+      gap: 10px;
+      padding-right: 9px;
+      font-size: 20px;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+
+      display: block;
+
+      width: 24px;
+      height: 24px;
+
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 13px;
+
+      transition: width 0.5s;
+
+      @include onTablet {
+        width: 29px;
+        height: 29px;
+        border-radius: 15px;
+      }
+
+      @include onDesktop {
+        width: 39px;
+        height: 39px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &__link-icon {
+    position: relative;
+    z-index: 1;
+
+    padding: 4px;
+    padding-left: 5px;
+    width: 25px;
+
+    @include onTablet {
+      padding: 5px;
+      padding-left: 6px;
+      width: 30px;
+    }
+
+    @include onDesktop {
+      padding: 8px;
+      padding-left: 9px;
+      width: 40px;
+    }
+  }
+
+  &__link-text {
+    position: relative;
+    z-index: 1;
+  }
+}
