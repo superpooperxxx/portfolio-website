@@ -9,11 +9,14 @@
 @use "./blocks/Project.scss";
 
 :root {
+  height: 100%;
+
   font-family: 'Roboto', sans-serif;
   color: $color__text-main;
   background: $color__background--main;
 }
 
 body {
+  height: 100%;
   background-color: $color__background--main;
 }
