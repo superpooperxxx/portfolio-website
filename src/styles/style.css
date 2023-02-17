@@ -43,6 +43,7 @@ a {
 }
 
 .page__hero {
+  position: fixed;
   z-index: 1;
   top: 0;
 }
@@ -390,7 +391,6 @@ a {
 
 :root {
   height: 100%;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
   color: #fff;
   background: #141414;
