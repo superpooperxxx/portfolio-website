@@ -6,6 +6,7 @@
   width: 100%;
 
   background-color: $color__background--main;
+  overflow: hidden;
 
   &__text-reveal {
     position: relative;
@@ -53,6 +54,10 @@
   }
 
   &__hi {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+
     display: inline-block;
     width: 70px;
     margin-bottom: 10px;
@@ -69,7 +74,7 @@
 
   &__hi-svg {
     stroke-dasharray: 629;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 629;
   }
 
   &__greeting {

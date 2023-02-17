@@ -1,14 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.timeline().from(
-  '.hero__hi-svg',
-  {
-    duration: 2,
-    strokeDashoffset: 629,
-    delay: 0.1,
-    ease: 'expo.in'
-  }
-)
+gsap.timeline()
+  .to(
+    '.hero__hi-svg',
+    {
+      duration: 2,
+      strokeDashoffset: 0,
+      delay: 0.1,
+      ease: 'expo.in'
+    }
+  )
   .to(
     '#svgGroup',
     {
@@ -17,14 +18,13 @@ gsap.timeline().from(
       fill: '#D6D5A8',
     }
   )
-  .from(
+  .to(
     '.hero__hi',
     {
       duration: 2,
-      left: '50%',
-      scale: 2,
-      transform: 'translateX(-50%)',
-      position: 'relative',
+      scale: 1,
+      left: 0,
+      transform: 'translateX(0)',
       ease: 'power3.inOut',
     }
   )
@@ -84,6 +84,41 @@ gsap.timeline().from(
 //       display: "none",
 //     }
 //   )
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.hero',
+    start: "top top",
+    markers: true,
+    scrub: 1,
+  }
+})
+  .to(
+    '.hero__content',
+    {
+      y: 100,
+    },
+    'start'
+  )
+  .to(
+    '.hero__hi',
+    {
+      y: 100,
+    },
+    'start'
+  )
+
+// gsap.to(
+//   '.hero__content',
+//   {
+//     y: 50,
+//     scrollTrigger: {
+//       trigger: '.hero',
+//       start: "top top",
+//       markers: true,
+//     }
+//   }
+// );
 
 const portfolioItems = gsap.utils.toArray('.portfolio__item');
 

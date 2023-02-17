@@ -78,28 +78,28 @@
       </div>
     </div>
   </header>
-  <section class="portfolio-header">
+  <!-- <section class="portfolio-header">
+    <img class="portfolio-header__background" src="./src/static/wavy.webp" alt="">
     <h2 class="portfolio-header__title">Portfolio</h2>
-  </section>
+  </section> -->
   <section class="portfolio">
     <article class="project portfolio__item">
       <div class="container">
-        <div class="project__header">
+        <header class="project__header">
           <h3 class="project__title">
             <span class="project__number">#01</span>
-            Planet facts
+            TODO app
           </h3>
           <ul class="project__tags">
+            <li class="project__tag">REST API</li>
+            <li class="project__tag">TypeScript</li>
             <li class="project__tag">React</li>
-            <li class="project__tag">Sass</li>
-            <li class="project__tag">BEM</li>
-            <li class="project__tag">GSAP</li>
-            <li class="project__tag">Particles.js</li>
+            <li class="project__tag">Bulma</li>
           </ul>
-        </div>
+        </header>
         <div class="project__links">
           <a
-            href="https://superpooperxxx.github.io/planets-facts/"
+            href="#"
             target="_blank"
             class="project__link project__link--demo"
           >
@@ -112,7 +112,7 @@
             <span class="project__link-text">Live Demo</span>
           </a>
           <a
-            href="https://github.com/superpooperxxx/planets-facts"
+            href="#"
             target="_blank"
             class="project__link project__link--code"
           >
@@ -124,14 +124,41 @@
             >
             <span class="project__link-text">Code</span>
           </a>
+        </div>
+        <div class="project__content">
+          <div class="project__description">
+            <h3 class="project__description-title">
+              What I learned?
+            </h3>
+            <div class="project__description-text">
+              <p class="project__description-line">
+                How to deal with API data using <strong>GET</strong>, <strong>POST</strong>, <strong>DELETE</strong>, and <strong>PATCH</strong> methods.
+              </p>
+              <p class="project__description-line">
+                Practiced with <strong>TypeScript</strong> (types, generics, etc.), <strong>Promises</strong>, and <strong>async/await</strong>.
+              </p>
+              <p class="project__description-line">
+                Used popular CSS library <strong>Bulma</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="project__showcase">
+            <a href="#" target="_blank">
+              <img
+                class="project__showcase-img"
+                src="./src/static/TODO__show.gif"
+                alt="planets facts website showcase"
+              >
+            </a>
+          </div>
         </div>
       </div>
     </article>
     <article class="project portfolio__item">
       <div class="container">
-        <div class="project__header">
+        <header class="project__header">
           <h3 class="project__title">
-            <span class="project__number">#01</span>
+            <span class="project__number">#02</span>
             Planet facts
           </h3>
           <ul class="project__tags">
@@ -141,7 +168,7 @@
             <li class="project__tag">GSAP</li>
             <li class="project__tag">Particles.js</li>
           </ul>
-        </div>
+        </header>
         <div class="project__links">
           <a
             href="https://superpooperxxx.github.io/planets-facts/"
@@ -169,27 +196,52 @@
             >
             <span class="project__link-text">Code</span>
           </a>
+        </div>
+        <div class="project__content">
+          <div class="project__description">
+            <h3 class="project__description-title">
+              What I learned?
+            </h3>
+            <div class="project__description-text">
+              <p class="project__description-line">
+                How to <strong>optimize rendering</strong> and practiced with <strong>React Hooks</strong> like useMemo, useCallback, etc. Also used <strong>React.memo</strong> for the same reason.
+              </p>
+              <p class="project__description-line">
+                Implemented <strong>Particles.js</strong> to make a dynamic background.
+              </p>
+              <p class="project__description-line">
+                Used <strong>GreenSock (GSAP)</strong> to make nice little animations.
+              </p>
+            </div>
+          </div>
+          <div class="project__showcase">
+            <a href="https://superpooperxxx.github.io/planets-facts/" target="_blank">
+              <img
+                class="project__showcase-img"
+                src="./src/static/planets-facts__show.gif"
+                alt="planets facts website showcase"
+              >
+            </a>
+          </div>
         </div>
       </div>
     </article>
     <article class="project portfolio__item">
       <div class="container">
-        <div class="project__header">
+        <header class="project__header">
           <h3 class="project__title">
-            <span class="project__number">#01</span>
-            Planet facts
+            <span class="project__number">#03</span>
+            Interactive card
           </h3>
           <ul class="project__tags">
             <li class="project__tag">React</li>
             <li class="project__tag">Sass</li>
             <li class="project__tag">BEM</li>
-            <li class="project__tag">GSAP</li>
-            <li class="project__tag">Particles.js</li>
           </ul>
-        </div>
+        </header>
         <div class="project__links">
           <a
-            href="https://superpooperxxx.github.io/planets-facts/"
+            href="https://superpooperxxx.github.io/payment-react/"
             target="_blank"
             class="project__link project__link--demo"
           >
@@ -202,7 +254,7 @@
             <span class="project__link-text">Live Demo</span>
           </a>
           <a
-            href="https://github.com/superpooperxxx/planets-facts"
+            href="https://github.com/superpooperxxx/payment-react"
             target="_blank"
             class="project__link project__link--code"
           >
@@ -215,9 +267,105 @@
             <span class="project__link-text">Code</span>
           </a>
         </div>
+        <div class="project__content">
+          <div class="project__description">
+            <h3 class="project__description-title">
+              What I learned?
+            </h3>
+            <div class="project__description-text">
+              <p class="project__description-line">
+                How to <strong>validate</strong> forms with React <strong>controlled components</strong>.
+              </p>
+              <p class="project__description-line">
+                Also used <strong>conditional rendering</strong> and <strong>classnames</strong> library.
+              </p>
+            </div>
+          </div>
+          <div class="project__showcase">
+            <a href="https://superpooperxxx.github.io/payment-react/" target="_blank">
+              <img
+                class="project__showcase-img"
+                src="./src/static/card__show.gif"
+                alt="planets facts website showcase"
+              >
+            </a>
+          </div>
+        </div>
       </div>
     </article>
-    
+    <article class="project portfolio__item">
+      <div class="container">
+        <header class="project__header">
+          <h3 class="project__title">
+            <span class="project__number">#04</span>
+            Landing page
+          </h3>
+          <ul class="project__tags">
+            <li class="project__tag">HTML5</li>
+            <li class="project__tag">Sass</li>
+            <li class="project__tag">BEM</li>
+            <li class="project__tag">Grid CSS</li>
+            <li class="project__tag">AOS</li>
+          </ul>
+        </header>
+        <div class="project__links">
+          <a
+            href="https://superpooperxxx.github.io/landing_myBike/"
+            target="_blank"
+            class="project__link project__link--demo"
+          >
+            <img
+              aria-hidden
+              src="./src/static/icon__demo.png"
+              alt="live demo icon"
+              class="project__link-icon project__link-icon--demo"
+            >
+            <span class="project__link-text">Live Demo</span>
+          </a>
+          <a
+            href="https://github.com/superpooperxxx/landing_myBike"
+            target="_blank"
+            class="project__link project__link--code"
+          >
+            <img
+              aria-hidden
+              src="./src/static/icon__code.png"
+              alt="code icon"
+              class="project__link-icon project__link-icon--code"
+            >
+            <span class="project__link-text">Code</span>
+          </a>
+        </div>
+        <div class="project__content">
+          <div class="project__description">
+            <h3 class="project__description-title">
+              What I learned?
+            </h3>
+            <div class="project__description-text">
+              <p class="project__description-line">
+                In my first project, I learned how to write <strong>clean code</strong>, used <strong>semantic</strong> tags, and applied <strong>CSS Grid</strong> for the whole page.
+              </p>
+              <p class="project__description-line">
+                Also combined <strong>BEM</strong> blocks with <strong>Sass</strong>, practiced with <strong>mixins</strong>, <strong>loops</strong>, etc.
+              </p>
+              <p class="project__description-line">
+                Used <strong>AOS</strong> for simple animations and optimized website with <strong>Lighthouse</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="project__showcase">
+            <a href="https://superpooperxxx.github.io/landing_myBike/" target="_blank">
+              <img
+                class="project__showcase-img"
+                src="./src/static/bike__show.gif"
+                alt="planets facts website showcase"
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
   </section>
   <div style="height: 100vh"></div>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>

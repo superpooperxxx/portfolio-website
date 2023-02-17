@@ -10,16 +10,15 @@
 @use "./blocks/Project.scss";
 
 :root {
-  height: 100%;
+  // height: 100%;
   // overflow: hidden;
 
   font-family: 'Roboto', sans-serif;
   color: $color__text-main;
-  background: $color__background--main;
 }
 
 body {
-  height: 100%;
-  overflow-y: scroll;
+  // height: 100%;
+  // overflow-y: scroll;
   background-color: $color__background--main;
 }
