@@ -6,11 +6,12 @@
 @use "./blocks/Page.scss";
 @use "./blocks/heroSection.scss";
 @use "./blocks/PortfolioHeader.scss";
+@use "./blocks/Portfolio.scss";
 @use "./blocks/Project.scss";
 
 :root {
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  // overflow: hidden;
 
   font-family: 'Roboto', sans-serif;
   color: $color__text-main;

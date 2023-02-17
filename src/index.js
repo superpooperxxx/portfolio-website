@@ -84,3 +84,14 @@ gsap.timeline().from(
 //       display: "none",
 //     }
 //   )
+
+const portfolioItems = gsap.utils.toArray('.portfolio__item');
+
+portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
+  ScrollTrigger.create({
+    trigger: item,
+    start: "top top",
+    pin: true,
+    pinSpacing: false,
+  })
+})

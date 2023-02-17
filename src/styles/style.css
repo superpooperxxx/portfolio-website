@@ -229,8 +229,13 @@ a {
   }
 }
 
+.portfolio__item {
+  position: relative;
+  z-index: 1;
+}
+
 .project {
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 25px;
   color: #000;
   background-color: #d0d2f2;
@@ -401,8 +406,7 @@ a {
 }
 
 :root {
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   color: #fff;
   background: #141414;
