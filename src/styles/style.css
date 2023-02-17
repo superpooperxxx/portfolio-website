@@ -42,16 +42,21 @@ a {
   }
 }
 
-.page__hero {
-  position: fixed;
-  z-index: 1;
-  top: 0;
+.page--loading {
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 .hero {
   height: 100vh;
   width: 100%;
   background-color: #141414;
+}
+.hero__text-reveal {
+  position: relative;
+  top: 50px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 1s;
 }
 .hero__blob {
   position: absolute;
@@ -179,6 +184,7 @@ a {
   color: #51557e;
   border: 2px solid #51557e;
   border-radius: 50px;
+  opacity: 0;
   transition: all 0.5s;
 }
 .hero__download-cv:hover {
@@ -391,6 +397,7 @@ a {
 
 :root {
   height: 100%;
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   color: #fff;
   background: #141414;
