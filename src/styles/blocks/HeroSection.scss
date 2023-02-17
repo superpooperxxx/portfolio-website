@@ -7,12 +7,12 @@
 
   background-color: $color__background--main;
 
-  &__text-reveal {
-    position: relative;
-    top: 50px;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: all 1s;
-  }
+  // &__text-reveal {
+  //   position: relative;
+  //   top: 50px;
+  //   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  //   transition: all 1s;
+  // }
 
   &__blob {
 
@@ -154,7 +154,7 @@
 
     border: 2px solid $color__borders;
     border-radius: 50px;
-    opacity: 0;
+    // opacity: 0;
 
     transition: all 0.5s;
 
