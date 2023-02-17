@@ -403,11 +403,13 @@ a {
 :root {
   font-family: "Roboto", sans-serif;
   color: #fff;
+  height: 100%;
   background: #141414;
 }
 
 body {
   background-color: #141414;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

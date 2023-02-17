@@ -61,7 +61,7 @@ gsap.timeline().from(
 gsap.timeline({
   scrollTrigger: {
     trigger: '.portfolio-header',
-    markers: true,
+    // markers: true,
     start: 'top top',
     end: '+=50%',
     scrub: 1,
