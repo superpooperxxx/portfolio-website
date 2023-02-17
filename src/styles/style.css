@@ -42,12 +42,7 @@ a {
   }
 }
 
-.page--loading {
-  overflow-y: hidden;
-  height: 100vh;
-}
 .page__hero {
-  position: fixed;
   z-index: 1;
   top: 0;
 }
@@ -395,6 +390,7 @@ a {
 
 :root {
   height: 100%;
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   color: #fff;
   background: #141414;
@@ -402,6 +398,7 @@ a {
 
 body {
   height: 100%;
+  overflow-y: scroll;
   background-color: #141414;
 }
 
