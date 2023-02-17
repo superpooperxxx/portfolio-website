@@ -46,6 +46,11 @@ a {
   overflow-y: hidden;
   height: 100vh;
 }
+.page__hero {
+  position: relative;
+  z-index: 1;
+  top: 0;
+}
 
 .hero {
   height: 100vh;
@@ -396,7 +401,7 @@ a {
 }
 
 :root {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   color: #fff;

@@ -4,9 +4,9 @@
     height: 100vh;
   }
 
-  // &__hero {
-  //   position: fixed;
-  //   z-index: 1;
-  //   top: 0;
-  // }
+  &__hero {
+    position: relative;
+    z-index: 1;
+    top: 0;
+  }
 }
