@@ -43,7 +43,7 @@ a {
 }
 
 .page--loading {
-  height: 100%;
+  height: 100vh;
   overflow-y: hidden;
 }
 .page__content--loading {
@@ -72,7 +72,7 @@ a {
   justify-content: center;
   align-items: center;
   transform: translateY(-50%);
-  opacity: 0.1;
+  opacity: 0;
   overflow: hidden;
 }
 .hero__blob-img {
@@ -502,8 +502,6 @@ a {
 }
 
 body {
-  height: 100%;
-  overflow-y: hidden;
   background-color: #141414;
 }
 

@@ -28,11 +28,11 @@ gsap.timeline()
       ease: 'power3.inOut',
     }
   )
-  .from(
+  .to(
     '.hero__blob',
     {
       duration: 0.5,
-      opacity: 0,
+      opacity: 0.1,
     }
   )
   .to(
@@ -55,12 +55,6 @@ gsap.timeline()
         document.querySelector('.page').classList.remove('page--loading');
         document.querySelector('.page__content').classList.remove('page__content--loading');
       }
-    }
-  )
-  .to(
-    '.page',
-    {
-      overflow: 'scroll'
     }
   );
 
@@ -102,16 +96,9 @@ gsap.timeline({
   }
 })
   .to(
-    '.hero__content',
+    ['.hero__content', '.hero__hi'],
     {
-      y: 100,
-    },
-    'start'
-  )
-  .to(
-    '.hero__hi',
-    {
-      y: 100,
+      y: 150,
     },
     'start'
   )
