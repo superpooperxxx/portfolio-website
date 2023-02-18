@@ -112,7 +112,6 @@ portfolioItems.slice(0, portfolioItems.length - 1).forEach((item, i, items) => {
       start: 'top top',
       pin: true,
       pinSpacing: false,
-      markers: true,
     }
   })
     .to(
