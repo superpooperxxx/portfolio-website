@@ -42,9 +42,11 @@ a {
   }
 }
 
+.page {
+  height: 100%;
+}
 .page--loading {
   overflow-y: hidden;
-  height: 100%;
 }
 
 .hero {
@@ -501,8 +503,6 @@ a {
 }
 
 body {
-  height: 100%;
-  overflow-y: scroll;
   background-color: #141414;
 }
 
