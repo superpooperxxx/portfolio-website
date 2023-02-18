@@ -89,7 +89,7 @@ gsap.timeline({
   scrollTrigger: {
     trigger: '.hero',
     start: "top top",
-    scrub: 1,
+    scrub: true,
   }
 })
   .to(
