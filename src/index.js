@@ -1,55 +1,55 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.timeline()
-  // .to(
-  //   '.hero__hi-svg',
-  //   {
-  //     duration: 2,
-  //     strokeDashoffset: 0,
-  //     delay: 0.1,
-  //     ease: 'expo.in'
-  //   }
-  // )
-  // .to(
-  //   '#svgGroup',
-  //   {
-  //     duration: 0.5,
-  //     delay: 0.1,
-  //     fill: '#D6D5A8',
-  //   }
-  // )
-  // .to(
-  //   '.hero__hi',
-  //   {
-  //     duration: 2,
-  //     scale: 1,
-  //     left: 0,
-  //     transform: 'translateX(0)',
-  //     ease: 'power3.inOut',
-  //   }
-  // )
-  // .from(
-  //   '.hero__blob',
-  //   {
-  //     duration: 0.5,
-  //     opacity: 0,
-  //   }
-  // )
-  // .to(
-  //   '.hero__text-reveal',
-  //   {
-  //     duration: 0.5,
-  //     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-  //     top: 0,
-  //     stagger: 0.5,
-  //     ease: 'power3.out'
-  //   }
-  // )
+  .to(
+    '.hero__hi-svg',
+    {
+      duration: 2,
+      strokeDashoffset: 0,
+      delay: 0.1,
+      ease: 'expo.in'
+    }
+  )
+  .to(
+    '#svgGroup',
+    {
+      duration: 0.5,
+      delay: 0.1,
+      fill: '#D6D5A8',
+    }
+  )
+  .to(
+    '.hero__hi',
+    {
+      duration: 2,
+      scale: 1,
+      left: 0,
+      transform: 'translateX(0)',
+      ease: 'power3.inOut',
+    }
+  )
+  .from(
+    '.hero__blob',
+    {
+      duration: 0.5,
+      opacity: 0,
+    }
+  )
+  .to(
+    '.hero__text-reveal',
+    {
+      duration: 0.5,
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+      top: 0,
+      stagger: 0.5,
+      ease: 'power3.out'
+    }
+  )
   .to(
     '.hero__download-cv',
     {
       duration: 0.5,
-      delay: 3,
+      delay: 1,
       opacity: 1,
       onComplete: () => {
         document.querySelector('.page').classList.remove('page--loading');
@@ -87,27 +87,27 @@ gsap.timeline()
 //     }
 //   )
 
-gsap.timeline({
-  scrollTrigger: {
-    trigger: '.hero',
-    start: "top top",
-    scrub: true,
-  }
-})
-  .to(
-    '.hero__content',
-    {
-      y: 100,
-    },
-    'start'
-  )
-  .to(
-    '.hero__hi',
-    {
-      y: 100,
-    },
-    'start'
-  )
+// gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.hero',
+//     start: "top top",
+//     scrub: true,
+//   }
+// })
+//   .to(
+//     '.hero__content',
+//     {
+//       y: 100,
+//     },
+//     'start'
+//   )
+//   .to(
+//     '.hero__hi',
+//     {
+//       y: 100,
+//     },
+//     'start'
+//   )
 
 // gsap.to(
 //   '.hero__content',
@@ -121,13 +121,13 @@ gsap.timeline({
 //   }
 // );
 
-const portfolioItems = gsap.utils.toArray('.portfolio__item');
+// const portfolioItems = gsap.utils.toArray('.portfolio__item');
 
-portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
-  ScrollTrigger.create({
-    trigger: item,
-    start: "top top",
-    pin: true,
-    pinSpacing: false,
-  })
-})
+// portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
+//   ScrollTrigger.create({
+//     trigger: item,
+//     start: "top top",
+//     pin: true,
+//     pinSpacing: false,
+//   })
+// })
