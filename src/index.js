@@ -53,7 +53,14 @@ gsap.timeline()
       opacity: 1,
       onComplete: () => {
         document.querySelector('.page').classList.remove('page--loading');
+        document.querySelector('.page__content').classList.remove('page__content--loading');
       }
+    }
+  )
+  .to(
+    '.page',
+    {
+      overflow: 'scroll'
     }
   );
 
@@ -87,47 +94,35 @@ gsap.timeline()
 //     }
 //   )
 
-// gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.hero',
-//     start: "top top",
-//     scrub: true,
-//   }
-// })
-//   .to(
-//     '.hero__content',
-//     {
-//       y: 100,
-//     },
-//     'start'
-//   )
-//   .to(
-//     '.hero__hi',
-//     {
-//       y: 100,
-//     },
-//     'start'
-//   )
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.hero',
+    start: "top top",
+    scrub: true,
+  }
+})
+  .to(
+    '.hero__content',
+    {
+      y: 100,
+    },
+    'start'
+  )
+  .to(
+    '.hero__hi',
+    {
+      y: 100,
+    },
+    'start'
+  )
 
-// gsap.to(
-//   '.hero__content',
-//   {
-//     y: 50,
-//     scrollTrigger: {
-//       trigger: '.hero',
-//       start: "top top",
-//       markers: true,
-//     }
-//   }
-// );
+const portfolioItems = gsap.utils.toArray('.portfolio__item');
 
-// const portfolioItems = gsap.utils.toArray('.portfolio__item');
-
-// portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
-//   ScrollTrigger.create({
-//     trigger: item,
-//     start: "top top",
-//     pin: true,
-//     pinSpacing: false,
-//   })
-// })
+portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
+  ScrollTrigger.create({
+    trigger: item,
+    start: "top top",
+    pin: true,
+    pinSpacing: false,
+  })
+})

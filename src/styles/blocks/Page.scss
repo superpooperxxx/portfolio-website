@@ -5,6 +5,14 @@
     overflow-y: hidden;
   }
 
+  &__content {
+
+    &--loading {
+      height: 100%;
+      overflow-y: hidden;
+    }
+  }
+
   // &__hero {
   //   position: fixed;
   //   z-index: 2;
