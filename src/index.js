@@ -105,25 +105,18 @@ gsap.timeline({
 
 const portfolioItems = gsap.utils.toArray('.portfolio__item');
 
-portfolioItems.slice(0, portfolioItems.length - 1).forEach((item, i, items) => {
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: item,
-      start: 'top top',
-      pin: true,
-      pinSpacing: false,
-    }
-  })
-    .to(
+portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
+    gsap.to(
       item,
       {
         background: '#afb2d5',
         scrollTrigger: {
           trigger: item,
-          start: "bottom 101%",
+          start: "top top",
+          pin: true,
+          pinSpacing: false,
           scrub: true,
         }
-      },
-      'start'
+      }
     )
 })
