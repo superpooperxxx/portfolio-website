@@ -1,0 +1,38 @@
+@use "../utils/mixins" as *;
+@use "../utils/colors" as *;
+
+.this-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  &__text {
+    font-size: 45px;
+    line-height: 55px;
+
+    @include onTablet {
+      font-size: 75px;
+      line-height: 90px;
+    }
+
+    @include onDesktop {
+      font-size: 110px;
+      line-height: 130px;
+    }
+  }
+
+  &__text-letter {
+    opacity: 1;
+    color: #fff;
+
+    &--accent {
+      &_yellow {
+        color: $color__accent--yellow;
+      }
+
+      &_purple {
+        color: $color__text-accent--purple;
+      }
+    }
+  }
+}

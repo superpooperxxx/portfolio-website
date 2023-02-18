@@ -496,6 +496,38 @@ a {
   width: 100%;
 }
 
+.this-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.this-page__text {
+  font-size: 45px;
+  line-height: 55px;
+}
+@media (min-width: 768px) {
+  .this-page__text {
+    font-size: 75px;
+    line-height: 90px;
+  }
+}
+@media (min-width: 1260px) {
+  .this-page__text {
+    font-size: 110px;
+    line-height: 130px;
+  }
+}
+.this-page__text-letter {
+  opacity: 1;
+  color: #fff;
+}
+.this-page__text-letter--accent_yellow {
+  color: #d6d5a8;
+}
+.this-page__text-letter--accent_purple {
+  color: #816797;
+}
+
 :root {
   font-family: "Roboto", sans-serif;
   color: #fff;

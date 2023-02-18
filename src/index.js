@@ -106,17 +106,52 @@ gsap.timeline({
 const portfolioItems = gsap.utils.toArray('.portfolio__item');
 
 portfolioItems.slice(0, portfolioItems.length - 1).forEach(item => {
-    gsap.to(
-      item,
-      {
-        background: '#afb2d5',
-        scrollTrigger: {
-          trigger: item,
-          start: "top top",
-          pin: true,
-          pinSpacing: false,
-          scrub: true,
-        }
+  gsap.to(
+    item,
+    {
+      background: '#9ea2cb',
+      scrollTrigger: {
+        trigger: item,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        snap: 1,
       }
-    )
+    }
+  )
 })
+
+let newText = '';
+const thisPageText = document.querySelector('.this-page__text');
+
+for (const word of thisPageText.innerText.split(' ')) {
+  for (const letter of word) {
+    if (word === 'designed') {
+      newText += `<span class="this-page__text-letter this-page__text-letter--accent_yellow">${letter}</span>`;
+    } else if (word === 'developed') {
+      newText += `<span class="this-page__text-letter this-page__text-letter--accent_purple">${letter}</span>`;
+    } else {
+      newText += `<span class="this-page__text-letter">${letter}</span>`;
+    }
+  }
+
+  newText += ' ';
+}
+
+thisPageText.innerHTML = newText;
+
+gsap.from(
+  '.this-page__text-letter',
+  {
+    opacity: 0,
+    color: '#816797',
+    stagger: 0.03,
+    scrollTrigger: {
+      trigger: '.this-page__text',
+      start: "10% bottom",
+      end: "bottom bottom",
+      toggleActions: "play play reverse none",
+    }
+  }
+)
