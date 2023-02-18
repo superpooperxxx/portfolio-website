@@ -120,7 +120,7 @@ portfolioItems.slice(0, portfolioItems.length - 1).forEach((item, i, items) => {
         background: '#afb2d5',
         scrollTrigger: {
           trigger: item,
-          start: "bottom bottom",
+          start: "bottom 101%",
           scrub: true,
         }
       },
