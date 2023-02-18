@@ -113,16 +113,15 @@ portfolioItems.slice(0, portfolioItems.length - 1).forEach((item, i, items) => {
     pinSpacing: false,
   })
 
-  gsap.timeline()
-    .to(
-      item,
-      {
-        background: '#afb2d5',
-        scrollTrigger: {
-          trigger: item,
-          start: "bottom bottom",
-          scrub: true,
-        }
+  gsap.to(
+    item,
+    {
+      background: '#afb2d5',
+      scrollTrigger: {
+        trigger: item,
+        start: "bottom bottom",
+        scrub: true,
       }
-    )
+    }
+  )
 })
