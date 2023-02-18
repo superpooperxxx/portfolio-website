@@ -42,10 +42,8 @@ a {
   }
 }
 
-.page {
-  height: 100%;
-}
 .page--loading {
+  height: 100vh;
   overflow-y: hidden;
 }
 
