@@ -1,57 +1,59 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.timeline()
-  .to(
-    '.hero__hi-svg',
-    {
-      duration: 2,
-      strokeDashoffset: 0,
-      delay: 0.1,
-      ease: 'expo.in'
-    }
-  )
-  .to(
-    '#svgGroup',
-    {
-      duration: 0.5,
-      delay: 0.1,
-      fill: '#D6D5A8',
-    }
-  )
-  .to(
-    '.hero__hi',
-    {
-      duration: 2,
-      scale: 1,
-      left: 0,
-      transform: 'translateX(0)',
-      ease: 'power3.inOut',
-    }
-  )
-  .from(
-    '.hero__blob',
-    {
-      duration: 0.5,
-      opacity: 0,
-    }
-  )
-  .to(
-    '.hero__text-reveal',
-    {
-      duration: 0.5,
-      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-      top: 0,
-      stagger: 0.5,
-      ease: 'power3.out'
-    }
-  )
+  // .to(
+  //   '.hero__hi-svg',
+  //   {
+  //     duration: 2,
+  //     strokeDashoffset: 0,
+  //     delay: 0.1,
+  //     ease: 'expo.in'
+  //   }
+  // )
+  // .to(
+  //   '#svgGroup',
+  //   {
+  //     duration: 0.5,
+  //     delay: 0.1,
+  //     fill: '#D6D5A8',
+  //   }
+  // )
+  // .to(
+  //   '.hero__hi',
+  //   {
+  //     duration: 2,
+  //     scale: 1,
+  //     left: 0,
+  //     transform: 'translateX(0)',
+  //     ease: 'power3.inOut',
+  //   }
+  // )
+  // .from(
+  //   '.hero__blob',
+  //   {
+  //     duration: 0.5,
+  //     opacity: 0,
+  //   }
+  // )
+  // .to(
+  //   '.hero__text-reveal',
+  //   {
+  //     duration: 0.5,
+  //     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+  //     top: 0,
+  //     stagger: 0.5,
+  //     ease: 'power3.out'
+  //   }
+  // )
   .to(
     '.hero__download-cv',
     {
       duration: 0.5,
-      delay: 1,
+      delay: 3,
       opacity: 1,
-      onComplete: () => document.querySelector('.page').classList.remove('page--loading')
+      onComplete: () => {
+        document.querySelector('.page').classList.remove('page--loading');
+      }
     }
   );
 
