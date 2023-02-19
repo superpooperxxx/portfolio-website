@@ -155,3 +155,25 @@ gsap.from(
     }
   }
 )
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.wrapper',
+    start: 'top top',
+    pin: true,
+    scrub: true,
+  }
+})
+  .to(
+    '.this-page',
+    {
+      scale: 5,
+      opacity: 0,
+    }
+  )
+  .to(
+    '.this-page',
+    {
+      display: 'none',
+    }
+  )

@@ -1,0 +1,21 @@
+.contacts {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+  background: red;
+
+  font-size: 35px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+
+  &__item {
+    position: absolute;
+  }
+}

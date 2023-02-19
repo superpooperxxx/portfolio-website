@@ -500,6 +500,8 @@ a {
   display: flex;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  background: #141414;
 }
 .this-page__text {
   font-size: 45px;
@@ -526,6 +528,25 @@ a {
 }
 .this-page__text-letter--accent_purple {
   color: #816797;
+}
+
+.contacts {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: red;
+  font-size: 35px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+.wrapper__item {
+  position: absolute;
 }
 
 :root {
