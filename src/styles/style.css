@@ -194,6 +194,19 @@ a {
   font-weight: 500;
   color: #816797;
 }
+.hero__country-container {
+  position: relative;
+  display: inline-block;
+}
+.hero__country {
+  color: #6483c6;
+}
+.hero__country--wave {
+  position: absolute;
+  left: 0;
+  color: #d6d5a8;
+  animation: wave 7s infinite;
+}
 .hero__city {
   font-weight: 500;
 }
@@ -231,6 +244,9 @@ a {
   background-color: #51557e;
   color: #fff;
 }
+.hero__download-cv:active {
+  border-color: #fff;
+}
 @media (min-width: 768px) {
   .hero__download-cv {
     width: 220px;
@@ -239,6 +255,14 @@ a {
   }
 }
 
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(0% 47%, 13% 42%, 26% 42%, 40% 44%, 52% 47%, 61% 52%, 71% 53%, 80% 55%, 90% 56%, 100% 54%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 57%, 12% 59%, 24% 59%, 36% 56%, 47% 53%, 56% 51%, 66% 47%, 76% 45%, 88% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
 .portfolio__item {
   position: relative;
   z-index: 1;

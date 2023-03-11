@@ -122,6 +122,24 @@
     color: $color__text-accent--purple;
   }
 
+  &__country-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__country {
+    color: #6483c6;
+
+    &--wave {
+      position: absolute;
+      left: 0;
+
+      color: $color__accent--yellow;
+
+      animation: wave 7s infinite;
+    }
+  }
+
   &__city {
     font-weight: 500;
   }
@@ -167,10 +185,51 @@
       color: #fff;
     }
 
+    &:active {
+      border-color: #fff;
+    }
+
     @include onTablet {
       width: 220px;
       height: 65px;
       font-size: 20px;
     }
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 47%,
+      13% 42%,
+      26% 42%,
+      40% 44%,
+      52% 47%,
+      61% 52%,
+      71% 53%,
+      80% 55%,
+      90% 56%,
+      100% 54%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0 57%,
+      12% 59%,
+      24% 59%,
+      36% 56%,
+      47% 53%,
+      56% 51%,
+      66% 47%,
+      76% 45%,
+      88% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
