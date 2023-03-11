@@ -468,7 +468,6 @@ a {
 .this-page {
   display: flex;
   align-items: center;
-  height: 100vh;
   background: #141414;
 }
 .this-page__text {
@@ -502,7 +501,6 @@ a {
   z-index: 1;
   display: flex;
   align-items: center;
-  height: 100vh;
   opacity: 0;
 }
 .contacts__container {
@@ -582,11 +580,14 @@ a {
 
 .wrapper {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 .wrapper__item {
   position: absolute;
+  top: 0;
   width: 100%;
+  height: 100%;
 }
 
 :root {
@@ -596,6 +597,7 @@ a {
 
 body {
   background-color: #141414;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
