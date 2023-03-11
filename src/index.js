@@ -144,7 +144,6 @@ gsap
     scrollTrigger: {
       trigger: ".wrapper",
       start: "top top",
-      scrub: true,
       pin: true,
     },
   })
