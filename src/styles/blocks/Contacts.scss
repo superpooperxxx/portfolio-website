@@ -1,14 +1,94 @@
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
 .contacts {
-  z-index: -1;
+  z-index: 1;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-
   height: 100vh;
-  width: 100%;
-  background: coral;
+  opacity: 0;
 
-  font-size: 35px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    max-width: 768px;
+
+    @include onDesktop {
+      width: 50%;
+    }
+  }
+
+  &__more,
+  &__get-in-touch-text {
+    font-size: 35px;
+    font-weight: 700;
+
+    @include onTablet {
+      font-size: 45px;
+    }
+
+    @include onDesktop {
+      font-size: 35px;
+    }
+  }
+
+  &__more {
+    margin-bottom: 25px;
+
+    @include onDesktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__github {
+    color: $color__accent--yellow;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $color__text-accent--purple;
+    }
+  }
+
+  &__get-in-touch-text {
+    margin-bottom: 10px;
+    color: $color__text-accent--purple;
+
+    @include onDesktop {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__link-icon {
+    height: 50px;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .wrapper {
@@ -17,5 +97,6 @@
 
   &__item {
     position: absolute;
+    width: 100%;
   }
 }

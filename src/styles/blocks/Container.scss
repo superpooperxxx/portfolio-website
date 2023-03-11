@@ -1,7 +1,7 @@
-@use "../utils/mixins" as * ;
+@use "../utils/mixins" as *;
 
 .container {
-  margin: 0 auto;
+  width: 100vw;
   max-width: 1440px;
   padding: 0 24px;
 
@@ -11,5 +11,6 @@
 
   @include onDesktop {
     padding: 0;
+    margin: 0 auto;
   }
 }

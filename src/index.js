@@ -152,16 +152,21 @@ gsap.from(
       start: "10% bottom",
       end: "bottom bottom",
       toggleActions: "play play reverse none",
+      scrub: 1,
     }
   }
 )
+
+const thisPage = document.querySelector('.this-page');
 
 gsap.timeline({
   scrollTrigger: {
     trigger: '.wrapper',
     start: 'top top',
-    pin: true,
+    end: '+=50%',
     scrub: true,
+    pin: true,
+    markers: true,
   }
 })
   .to(
@@ -169,11 +174,13 @@ gsap.timeline({
     {
       scale: 5,
       opacity: 0,
-    }
+    },
+    'start'
   )
   .to(
-    '.this-page',
+    '.contacts',
     {
-      display: 'none',
-    }
+      opacity: 1,
+    },
+    'start'
   )

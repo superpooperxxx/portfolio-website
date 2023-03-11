@@ -27,7 +27,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  width: 100vw;
   max-width: 1440px;
   padding: 0 24px;
 }
@@ -39,6 +39,7 @@ a {
 @media (min-width: 1260px) {
   .container {
     padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -204,38 +205,6 @@ a {
     width: 220px;
     height: 65px;
     font-size: 20px;
-  }
-}
-
-.portfolio-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.portfolio-header__background {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
-.portfolio-header__title {
-  position: relative;
-  z-index: 2;
-  font-size: 45px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #fff;
-}
-@media (min-width: 768px) {
-  .portfolio-header__title {
-    font-size: 75px;
-  }
-}
-@media (min-width: 1260px) {
-  .portfolio-header__title {
-    font-size: 150px;
   }
 }
 
@@ -500,7 +469,6 @@ a {
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100%;
   background: #141414;
 }
 .this-page__text {
@@ -531,14 +499,85 @@ a {
 }
 
 .contacts {
-  z-index: -1;
+  z-index: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+  opacity: 0;
+}
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
   width: 100%;
-  background: coral;
+}
+@media (min-width: 1260px) {
+  .contacts__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.contacts__right {
+  width: 100%;
+  max-width: 768px;
+}
+@media (min-width: 1260px) {
+  .contacts__right {
+    width: 50%;
+  }
+}
+.contacts__more, .contacts__get-in-touch-text {
   font-size: 35px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .contacts__more, .contacts__get-in-touch-text {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1260px) {
+  .contacts__more, .contacts__get-in-touch-text {
+    font-size: 35px;
+  }
+}
+.contacts__more {
+  margin-bottom: 25px;
+}
+@media (min-width: 1260px) {
+  .contacts__more {
+    margin-bottom: 40px;
+  }
+}
+.contacts__github {
+  color: #d6d5a8;
+}
+.contacts__github:hover {
+  text-decoration: underline;
+}
+.contacts__github:active {
+  color: #816797;
+}
+.contacts__get-in-touch-text {
+  margin-bottom: 10px;
+  color: #816797;
+}
+@media (min-width: 1260px) {
+  .contacts__get-in-touch-text {
+    margin-bottom: 15px;
+  }
+}
+.contacts__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contacts__link-icon {
+  height: 50px;
+  transition: transform 0.3s;
+}
+.contacts__link-icon:hover {
+  transform: scale(1.1);
 }
 
 .wrapper {
@@ -547,6 +586,7 @@ a {
 }
 .wrapper__item {
   position: absolute;
+  width: 100%;
 }
 
 :root {
