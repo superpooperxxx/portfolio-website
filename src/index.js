@@ -101,8 +101,9 @@ gsap.from(".this-page__text-letter", {
   scrollTrigger: {
     trigger: ".this-page__text",
     start: "10% bottom",
-    end: "bottom bottom",
+    end: "150% bottom",
     toggleActions: "play play reverse none",
+    scrub: true,
   },
 });
 
@@ -113,6 +114,7 @@ gsap
     scrollTrigger: {
       trigger: ".wrapper",
       start: "top top",
+      end: "+=200%",
       pin: true,
       scrub: true,
     },
