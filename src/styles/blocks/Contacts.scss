@@ -93,7 +93,8 @@
 
 .wrapper {
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
 
   &__item {
     position: absolute;
