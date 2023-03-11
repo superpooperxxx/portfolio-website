@@ -1,3 +1,4 @@
+@use "./utils/typography";
 @use "./utils/reset";
 @use "./utils/colors" as *;
 @use "./utils/mixins" as *;
@@ -11,7 +12,6 @@
 @use "./blocks/Contacts.scss";
 
 :root {
-  font-family: "Roboto", sans-serif;
   color: $color__text-main;
 }
 

@@ -43,36 +43,6 @@ gsap
     },
   });
 
-// gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.portfolio-header',
-//     // markers: true,
-//     start: 'top top',
-//     end: '+=50%',
-//     scrub: 1,
-//     pin: true,
-//   }
-// })
-//   .to(
-//     '.hero__container',
-//     {
-//       scale: 5,
-//       opacity: 0,
-//     }
-//   )
-//   .to(
-//     '.hero',
-//     {
-//       opacity: 0,
-//     }
-//   )
-//   .to(
-//     '.hero',
-//     {
-//       display: "none",
-//     }
-//   )
-
 gsap
   .timeline({
     scrollTrigger: {
