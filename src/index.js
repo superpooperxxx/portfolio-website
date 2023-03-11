@@ -70,7 +70,7 @@ portfolioItems.slice(0, portfolioItems.length - 1).forEach((item) => {
       pin: true,
       pinSpacing: false,
       scrub: true,
-      snap: 1,
+      snap: 0,
     },
   });
 });
