@@ -57,6 +57,25 @@ a {
   text-decoration: none;
 }
 
+.landscape-preventer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #141414;
+}
+@media (max-width: 1080px) and (orientation: landscape) {
+  .landscape-preventer {
+    display: flex;
+  }
+}
+
 .container {
   width: 100vw;
   max-width: 1440px;

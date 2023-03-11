@@ -3,6 +3,7 @@
 @use "./utils/colors" as *;
 @use "./utils/mixins" as *;
 
+@use "./blocks/LandscapePreventer.scss";
 @use "./blocks/Container.scss";
 @use "./blocks/Page.scss";
 @use "./blocks/heroSection.scss";
