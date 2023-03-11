@@ -133,7 +133,7 @@ gsap.from(".this-page__text-letter", {
     start: "10% bottom",
     end: "bottom bottom",
     toggleActions: "play play reverse none",
-    scrub: 1,
+    scrub: true,
   },
 });
 
@@ -145,6 +145,7 @@ gsap
       trigger: ".wrapper",
       start: "top top",
       pin: true,
+      scrub: true,
     },
   })
   .to(
