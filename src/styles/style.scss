@@ -11,10 +11,11 @@
 @use "./blocks/Contacts.scss";
 
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $color__text-main;
 }
 
 body {
   background-color: $color__background--main;
+  overflow-x: hidden;
 }

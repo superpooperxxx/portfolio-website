@@ -133,7 +133,6 @@ gsap.from(".this-page__text-letter", {
     start: "10% bottom",
     end: "bottom bottom",
     toggleActions: "play play reverse none",
-    scrub: true,
   },
 });
 
